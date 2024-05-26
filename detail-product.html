@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Foody - Organic Food Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      .icon-hover:hover {
+        border-color: #3b71ca !important;
+        background-color: white !important;
+        color: #3b71ca !important;
+      }
+
+      .icon-hover:hover i {
+        color: #3b71ca !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- content -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row gx-5">
+          <aside class="col-lg-6">
+            <div class="border rounded-4 mb-3 d-flex justify-content-center">
+              <a
+                data-fslightbox="mygalley"
+                class="rounded-4"
+                target="_blank"
+                data-type="image"
+                href="https://mdbcdn.b-cdn.net/img/bootstrap-ecommerce/items/detail1/big.webp"
+              >
+                <img
+                  style="max-width: 100%; max-height: 100vh; margin: auto"
+                  class="rounded-4 fit"
+                  src="img/pupuk.jpg"
+                />
+              </a>
+            </div>
+
+            <!-- gallery-wrap .end// -->
+          </aside>
+          <main class="col-lg-6">
+            <h4 class="title text-dark mb-5">
+              Pupuk NPK 16.16.16
+            </h4>
+
+              <div class="mb-3">
+                <span class="h5">Rp 50.000</span>
+                <span class="text-muted">/per produk</span>
+              </div>
+
+              <p>
+                Modern look and quality demo item is a streetwear-inspired
+                collection that continues to break away from the conventions of
+                mainstream fashion. Made in Italy, these black and brown
+                clothing low-top shirts for men.
+              </p>
+
+              
+
+              <hr />
+
+              <div class="row mb-4">
+                <!-- col.// -->
+                <div class="col-md-4 col-6 mb-3">
+                  <label class="mb-2 d-block">Quantity</label>
+                  <div class="input-group mb-3" style="width: 170px">
+                      <button class="btn btn-white border border px-3" type="button" id="button-addon1" data-mdb-ripple-color="dark">
+                          <i class="fas fa-minus"></i>
+                      </button>
+                      <input type="text" class="form-control text-center border border" value="1" name="quantity" aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                      <button class="btn btn-white border border px-3" type="button" id="button-addon2" data-mdb-ripple-color="dark">
+                          <i class="fas fa-plus"></i>
+                      </button>
+                  </div>
+              </div>
+              </div>
+              <a href="keranjang-1.html" class="btn btn-warning shadow-0"> Buy now </a>
+              <a href="keranjang-1.html" class="btn btn-primary shadow-0">
+                <i class="me-1 fa fa-shopping-basket"></i> Add to cart
+              </a>
+            </div>
+          </main>
+        </div>
+      </div>
+    </section>
+    <!-- content -->
+
+    <div class="card border-0 shadow" style="margin-bottom: 100px; margin-right: 25px; margin-left: 25px; border-radius: 10px;">
+      <div class="card-header bg-primary text-light">
+        <h5 class="mb-0 text-light">Deskripsi Produk</h5>
+      </div>
+      <div class="card-body">
+        
+        <p class="card-text">
+          Benih bermutu yang bisa mengguncang potensi hasil panenmu dari PT. Restu Agropro Jayamas Produk Benih Unggulan Kami akan hadir ditengah-tengah kalia Kepoin yuksKeunggulan RAJA Gold :✅Potensi Produksi 13.6 Ton✅Warna orange mengkilat✅Bisa dipanen di atas 90 HST✅Bisa tanam rapatit's been our pleasure to be your partnerYour Reliable & Flexible Partner#RAJA#R7#MitraTerbaikPetani#R7RAJANYAJAGUNG
+        </p>
+      </div>
+    </div>
+    
+    
+
+    
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+      // Ambil elemen input
+      var inputQuantity = document.querySelector(".input-group input");
+
+      // Ambil tombol tambah dan kurang
+      var btnMinus = document.getElementById("button-addon1");
+      var btnPlus = document.getElementById("button-addon2");
+
+      // Tambahkan event listener untuk tombol kurang
+      btnMinus.addEventListener("click", function () {
+        // Ambil nilai saat ini
+        var value = parseInt(inputQuantity.value);
+
+        // Kurangi nilai jika lebih dari 1
+        if (value > 1) {
+          inputQuantity.value = value - 1;
+        }
+      });
+
+      // Tambahkan event listener untuk tombol tambah
+      btnPlus.addEventListener("click", function () {
+        // Ambil nilai saat ini
+        var value = parseInt(inputQuantity.value);
+
+        // Tambahkan nilai
+        inputQuantity.value = value + 1;
+      });
+
+      // Tambahkan event listener untuk input
+      inputQuantity.addEventListener("change", function () {
+        // Ambil nilai saat ini
+        var value = parseInt(inputQuantity.value);
+
+        // Atur nilai minimum menjadi 1
+        if (isNaN(value) || value < 1) {
+          inputQuantity.value = 1;
+        }
+      });
+    </script>
+  </body>
+</html>

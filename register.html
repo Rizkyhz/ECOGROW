@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login 04</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style-login.css" />
+
+    <style>
+      @media (min-width: 992px) {
+        .wrap {
+          display: flex;
+          justify-content: space-between;
+        }
+        .img {
+          flex: 1;
+          margin-right: 30px;
+          max-width: 45%;
+        }
+        .login-wrap {
+          flex: 1;
+          max-width: 50%;
+        }
+        .logo-login {
+          margin-top: 100px;
+        }
+        .welcome-text {
+          font-size: 18px;
+          font-weight: bold;
+          color: black;
+        }
+      }
+
+      @media (max-width: 991.98px) {
+        .hide-on-small {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-10">
+            <div class="wrap d-md-flex" style="border-radius: 20px">
+              <div
+                class="img text-center"
+                style="position: relative; background-color: #d1f0d8"
+              >
+                <div class="logo-login">
+                  <img
+                    src="img/bg-login1.png"
+                    alt="Logo"
+                    style="
+                      max-width: 100%;
+                      height: 160px;
+                      max-height: 200px;
+                      margin-top: 20px;
+                    "
+                  />
+                  <p
+                    class="text-center welcome-text"
+                    style="color: black; font-weight: bold; margin-top: 15px"
+                  >
+                    Welcome to Ecogrow
+                  </p>
+                  <p
+                    class="text-center hide-on-small"
+                    style="font-size: 12px; padding: 10px"
+                  >
+                    Ecogrow adalah platform pertanian yang menyediakan solusi
+                    ramah lingkungan untuk menumbuhkan tanaman dengan inovatif.
+                  </p>
+                </div>
+              </div>
+              <div class="login-wrap p-4 p-md-5">
+                <div class="d-flex">
+                  <div class="w-100">
+                    <h3 class="mb-4 text-center">Registrasi</h3>
+                  </div>
+                </div>
+                <form action="#" class="signin-form">
+                  <div class="form-group mb-3">
+                    <label class="label" for="name">Nama</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nama"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label class="label" for="name">Username</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Username"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label class="label" for="name">Email</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label class="label" for="password">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <button
+                      type="submit"
+                      class="form-control btn rounded submit px-3"
+                      style="background-color: #00ac26; color: white"
+                    >
+                      Sign In
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

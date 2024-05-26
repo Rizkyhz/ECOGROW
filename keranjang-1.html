@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Foody - Organic Food Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light" style="background-color: #a1e0af">
+      <div class="container">
+        <a class="navbar-brand" href="product.html">
+          <i class="fas fa-chevron-left" style="margin-right: 10px"></i>
+          Keranjang
+        </a>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Shopping Cart -->
+    <div class="container mt-5">
+      <h2 class="mb-4">Review product</h2>
+      <div class="row">
+        <!-- Product List -->
+        <div class="col-lg-8">
+          <div class="card mb-3 border rounded-3 shadow">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-3">
+                  <img
+                    src="img/pupuk.jpg"
+                    class="img-fluid"
+                    alt="Product Image"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title">Pupuk NPK 16.16.16</h5>
+                  <p class="card-text">Price: Rp 50.000</p>
+                  <div class="input-group mb-3" style="width: 170px">
+                    <button
+                      class="btn btn-white border border px-3"
+                      type="button"
+                      id="button-addon1"
+                      data-mdb-ripple-color="dark"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      type="text"
+                      class="form-control text-center border border"
+                      value="1"
+                      name="quantity"
+                      aria-label="Example text with button addon"
+                      aria-describedby="button-addon1"
+                    />
+                    <button
+                      class="btn btn-white border border px-3"
+                      type="button"
+                      id="button-addon2"
+                      data-mdb-ripple-color="dark"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <button class="btn btn-danger">Remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- More Products -->
+          <!-- Repeat the product card for additional products -->
+        </div>
+        <!-- Summary -->
+        <div class="col-lg-4">
+          <div class="card border rounded-3 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Summary</h5>
+              <hr />
+              <p>Total Items: 1</p>
+              <p>Total Price: Rp 50.000</p>
+              <a
+                href="keranjang-2.html"
+                class="btn btn-primary btn-block"
+                style="width: 100%; border-radius: 7px"
+                >Lanjut ke pemayaran</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Shopping Cart -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+      // Ambil elemen input
+      var inputQuantity = document.querySelector(".input-group input");
+
+      // Ambil tombol tambah dan kurang
+      var btnMinus = document.getElementById("button-addon1");
+      var btnPlus = document.getElementById("button-addon2");
+
+      // Tambahkan event listener untuk tombol kurang
+      btnMinus.addEventListener("click", function () {
+        // Ambil nilai saat ini
+        var value = parseInt(inputQuantity.value);
+
+        // Kurangi nilai jika lebih dari 1
+        if (value > 1) {
+          inputQuantity.value = value - 1;
+        }
+      });
+
+      // Tambahkan event listener untuk tombol tambah
+      btnPlus.addEventListener("click", function () {
+        // Ambil nilai saat ini
+        var value = parseInt(inputQuantity.value);
+
+        // Tambahkan nilai
+        inputQuantity.value = value + 1;
+      });
+
+      // Tambahkan event listener untuk input
+      inputQuantity.addEventListener("change", function () {
+        // Ambil nilai saat ini
+        var value = parseInt(inputQuantity.value);
+
+        // Atur nilai minimum menjadi 1
+        if (isNaN(value) || value < 1) {
+          inputQuantity.value = 1;
+        }
+      });
+    </script>
+  </body>
+</html>

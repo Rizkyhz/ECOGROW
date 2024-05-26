@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard Mahasiswa</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style-dashboard.css" />
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch text-dark">
+      <nav id="sidebar" style="background-color: #a1e0af">
+        <div class="p-4 pt-5">
+          <a
+            href="#"
+            class="img logo rounded-circle mb-5"
+            style="background-image: url(img/Ecogrow.png)"
+          ></a>
+          <ul class="list-unstyled components mb-5">
+            <li class="active"></li>
+            <li>
+              <a href="admin-data-user.html">Data User</a>
+            </li>
+            <li>
+              <a href="admin-stok-produk.html">Stok Produk</a>
+            </li>
+            <li>
+              <a href="admin-data-pembayaran.html"style="color: #ff9417">Data Pembayaran</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button
+              type="button"
+              id="sidebarCollapse"
+              class="btn"
+              style="background-color: #00ac26; color: #fff"
+            >
+              <i class="fa fa-chevron-right"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button
+              class="btn d-inline-block d-lg-none ml-auto"
+              style="background-color: #00ac26; color: #fff"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-secondary" href="index-user.html"
+                    >Home</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Isi dashboard -->
+
+
+        <div class="table-responsive">
+          <table class="table table-hover table-striped">
+            <thead class="text-center" style="background-color: #00ac26; color: #fff">
+              <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Nomor HP</th>
+                <th>Bukti Pembayaran</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody class="text-center">
+              <tr>
+                <td>1</td>
+                <td>Nama Pengguna 1</td>
+                <td>08123456789</td>
+                <td><img src="path/to/payment_proof_1.jpg" alt="Bukti Pembayaran"></td>
+                <td>
+                  <select class="form-control" id="status1">
+                    <option value="diproses">Diproses</option>
+                    <option value="berhasil">Berhasil</option>
+                  </select>
+                </td>
+                <td>
+                  
+                  <button style="background-color: red; color: white; border: none;">Hapus</button>
+                </td>
+              </tr>
+              <!-- Tambahkan baris tambahan sesuai kebutuhan -->
+            </tbody>
+          </table>
+        </div>
+        
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main-dash.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
